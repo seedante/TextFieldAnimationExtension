@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="58O-3o-0pZ">
+                                <rect key="frame" x="173" y="285" width="254" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="9dJ-Bd-qvh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="twitter" keyboardAppearance="alert"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HPQ-NU-Zz7">
+                                <rect key="frame" x="238" y="207" width="120" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="YPi-zJ-lws"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="OFF"/>
+                                    <segment title="ON"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchOnorOffInputEffect:" destination="BYZ-38-t0r" eventType="valueChanged" id="TSs-Dj-0f5"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-f3-Wzq">
+                                <rect key="frame" x="240" y="51" width="120" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="vk6-PX-puj"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="OFF"/>
+                                    <segment title="ON"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchOnorOFFInputSkakeEffect:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZMk-mX-9aQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-4f-BoM">
+                                <rect key="frame" x="240" y="129" width="120" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1Nr-Pg-yjr"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="OFF"/>
+                                    <segment title="ON"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchOnorOffColorTextEffect:" destination="BYZ-38-t0r" eventType="valueChanged" id="nr1-h4-wtd"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InputAnimation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7I-hj-I56">
+                                <rect key="frame" x="92" y="210" width="116" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThrowColorText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdz-02-mZb">
+                                <rect key="frame" x="87" y="132" width="121" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InputShake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhq-Vc-7kj">
+                                <rect key="frame" x="122" y="54" width="86" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="❤️" borderStyle="roundedRect" placeholder="InputEffectText" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wur-o1-mUj">
+                                <rect key="frame" x="238" y="169" width="120" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept First Letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="028-uY-vXf">
+                                <rect key="frame" x="67" y="173" width="141" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="028-uY-vXf" firstAttribute="trailing" secondItem="l7I-hj-I56" secondAttribute="trailing" id="1nU-BL-tfb"/>
+                            <constraint firstItem="nk3-f3-Wzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4C9-WH-G3P"/>
+                            <constraint firstItem="HPQ-NU-Zz7" firstAttribute="top" secondItem="dPm-4f-BoM" secondAttribute="bottom" constant="50" id="CvD-XC-kIp"/>
+                            <constraint firstItem="rdz-02-mZb" firstAttribute="centerY" secondItem="dPm-4f-BoM" secondAttribute="centerY" id="Ftv-rv-1ey"/>
+                            <constraint firstItem="HPQ-NU-Zz7" firstAttribute="top" secondItem="wur-o1-mUj" secondAttribute="bottom" constant="8" id="GDw-v2-RkD"/>
+                            <constraint firstItem="58O-3o-0pZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRr-ku-egS"/>
+                            <constraint firstItem="028-uY-vXf" firstAttribute="centerY" secondItem="wur-o1-mUj" secondAttribute="centerY" id="Joq-ce-zVl"/>
+                            <constraint firstItem="wur-o1-mUj" firstAttribute="leading" secondItem="HPQ-NU-Zz7" secondAttribute="leading" id="Jra-bM-Ewb"/>
+                            <constraint firstItem="rdz-02-mZb" firstAttribute="trailing" secondItem="028-uY-vXf" secondAttribute="trailing" id="MSg-gR-P4y"/>
+                            <constraint firstItem="hhq-Vc-7kj" firstAttribute="centerY" secondItem="nk3-f3-Wzq" secondAttribute="centerY" id="T5i-N6-H35"/>
+                            <constraint firstItem="l7I-hj-I56" firstAttribute="centerY" secondItem="HPQ-NU-Zz7" secondAttribute="centerY" id="azN-3E-ZYp"/>
+                            <constraint firstItem="58O-3o-0pZ" firstAttribute="top" secondItem="HPQ-NU-Zz7" secondAttribute="bottom" constant="50" id="ewu-B2-dxZ"/>
+                            <constraint firstItem="hhq-Vc-7kj" firstAttribute="trailing" secondItem="rdz-02-mZb" secondAttribute="trailing" id="gVJ-i0-oPO"/>
+                            <constraint firstItem="HPQ-NU-Zz7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="nNL-9E-bhd"/>
+                            <constraint firstItem="dPm-4f-BoM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rf7-74-6H1"/>
+                            <constraint firstItem="58O-3o-0pZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v1T-QT-Moy"/>
+                            <constraint firstItem="dPm-4f-BoM" firstAttribute="top" secondItem="nk3-f3-Wzq" secondAttribute="bottom" constant="50" id="vG0-rt-pcw"/>
+                            <constraint firstItem="HPQ-NU-Zz7" firstAttribute="leading" secondItem="l7I-hj-I56" secondAttribute="trailing" constant="30" id="yzd-43-7Hc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AnimationTextField" destination="58O-3o-0pZ" id="fJC-LZ-PL5"/>
+                        <outlet property="inputEffectTextField" destination="wur-o1-mUj" id="vM7-yY-o5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>

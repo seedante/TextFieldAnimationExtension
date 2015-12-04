@@ -38,7 +38,11 @@ Disable effect:
 
 	textField.removeSDEEffect()
 
-Input effect is disabled in default. You can enable it:
+Enable random color animation:
+
+	textField.colorDeleteAnimationEnabled = true
+
+Input effect is disabled in default. You can enable and custom it:
 
 	textField.inputAnimationEnabled = true
 	textField.inputAnimationText = "❤️"//Accept the first letter
